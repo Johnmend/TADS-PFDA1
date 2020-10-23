@@ -1,10 +1,10 @@
 /* ---------------------------------------------------
-	- Programa: Programa para fazer uma multiplicação simples
-	- Autor: Lucas Polezel e John Mendonça
-	- Descrição: O programa vai receber do usuário os números, multiplicar por 5 e mostrar na tela os resultados. 
+	- Programa: Programa para fazer uma multiplicaÃ§Ã£o simples
+	- Autor: Lucas Polezel e John MendonÃ§a
+	- DescriÃ§Ã£o: O programa vai receber do usuÃ¡rio os nÃºmeros, multiplicar por 5 e mostrar na tela os resultados. 
 	e imprimir o resultado na tela 
-	- Data de criação: 21.10.2020
-	- Última atualização: 22.10.2018 
+	- Data de criaÃ§Ã£o: 21.10.2020
+	- Ãšltima atualizaÃ§Ã£o: 22.10.2018 
 ------------------------------------------------------*/
 
 #include <stdlib.h>
@@ -25,25 +25,25 @@ int main ()
 	{
 		for(COLUNAS=0; COLUNAS<3; COLUNAS++)//for controlador de colunas
 		{
-			printf("Digite um número..:"); fflush(stdin); scanf("%i", &Numeros[LINHAS][COLUNAS]);
+			printf("Digite um nÃºmero..:"); fflush(stdin); scanf("%i", &Numeros[LINHAS][COLUNAS]);
 		}
 	}
 	
-	// ----- multiplicação -----
+	// ----- multiplicaÃ§Ã£o -----
 	for(LINHAS=0; LINHAS<3; LINHAS++) //for controlador de linhas
 	{
 		for(COLUNAS=0; COLUNAS<3; COLUNAS++) //for controlador de colunas
 		{
-			Numeros[LINHAS][COLUNAS] = Numeros[LINHAS][COLUNAS] * 5; //recebe o valor inserido e o multiplica de acordo com o solicitado no exercício
+			Numeros[LINHAS][COLUNAS] = Numeros[LINHAS][COLUNAS] * 5; //recebe o valor inserido e o multiplica de acordo com o solicitado no exercÃ­cio
 		}
 	}
 
-	// ----- impressão dos dados -----
+	// ----- impressÃ£o dos dados -----
 	for(LINHAS=0; LINHAS<3; LINHAS++) //for controlador de linhas
 	{
 		for(COLUNAS=0; COLUNAS<3; COLUNAS++)//for controlador de colunas
 		{
-		printf("%i - ", Numeros[LINHAS][COLUNAS]);
+			printf("%i - ", Numeros[LINHAS][COLUNAS]);
 		}
 	}
 }
